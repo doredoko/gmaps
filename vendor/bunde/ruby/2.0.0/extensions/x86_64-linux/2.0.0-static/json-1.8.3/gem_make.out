@@ -1,0 +1,14 @@
+current directory: /home/ec2-user/gmaps/vendor/bunde/ruby/2.0.0/gems/json-1.8.3/ext/json
+/home/ec2-user/.rbenv/versions/2.0.0-p648/bin/ruby -r ./siteconf20160824-2609-bjhman.rb extconf.rb
+creating Makefile
+
+current directory: /home/ec2-user/gmaps/vendor/bunde/ruby/2.0.0/gems/json-1.8.3/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/ec2-user/gmaps/vendor/bunde/ruby/2.0.0/gems/json-1.8.3/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /home/ec2-user/gmaps/vendor/bunde/ruby/2.0.0/gems/json-1.8.3/ext/json
+make "DESTDIR=" install
+installing default libraries
