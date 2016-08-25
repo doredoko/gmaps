@@ -11,7 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160824113353) do
+ActiveRecord::Schema.define(version: 20160825105247) do
+
+  create_table "people", force: true do |t|
+    t.string   "first_name"
+    t.string   "family_name"
+    t.string   "postalcode"
+    t.string   "city"
+    t.string   "town"
+    t.string   "banchi"
+    t.string   "tel_sigai"
+    t.string   "telsinai"
+    t.string   "keitai"
+    t.string   "bikou"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "gmaps"
+    t.boolean  "douki"
+    t.boolean  "genki"
+    t.boolean  "kouenkai"
+    t.float    "kihukin"
+    t.integer  "syoukai_id"
+    t.integer  "level"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.float    "latitude"
