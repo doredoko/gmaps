@@ -8,7 +8,7 @@ class PeopleController < ApplicationController
       @hash = Gmaps4rails.build_markers(@people) do |person, marker|
       marker.lat person.latitude
       marker.lng person.longitude
-      marker.infowindow person.description
+      marker.infowindow person.family_name
       marker.json({title: person.first_name})
     end
   end
