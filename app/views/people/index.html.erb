@@ -82,4 +82,8 @@
     });
     return infowindow;
     }
+    var info = createInfoWindow("Congratulations!");
+    google.maps.event.addListener(marker, 'click', function() {
+    info.open(map,marker);
+    });
 </script>
