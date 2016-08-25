@@ -76,14 +76,4 @@
       handler.bounds.extendWith(markers);
       handler.fitMapToBounds();
     });
-    function createInfoWindow(text){
-      var infowindow = new google.maps.InfoWindow({
-      content: text
-    });
-    return infowindow;
-    }
-    var info = createInfoWindow("Congratulations!");
-    google.maps.event.addListener(marker, 'click', function() {
-    info.open(map,marker);
-    });
 </script>
