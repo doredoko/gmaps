@@ -5,7 +5,7 @@ class Person < ActiveRecord::Base
   [ city, town, banchi].compact.join(', ')
   end
   
-  acts_as_gmappable
+  #acts_as_gmappable
   def gmaps4rails_infowindow
     "<h3>#{name}</h3><p>#{city}#{town}#{banchi}</p><p>#{tel_sinai}</p>"
 
