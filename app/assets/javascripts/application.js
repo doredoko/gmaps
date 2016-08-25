@@ -15,5 +15,5 @@
 //= require turbolinks
 //= require underscore
 //= require gmaps/google
-//= require jquery.jpostal 
+//= require jquery.jpostal
 //= require_tree .
