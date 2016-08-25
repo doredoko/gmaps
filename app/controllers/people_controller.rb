@@ -9,7 +9,7 @@ class PeopleController < ApplicationController
       marker.lat person.latitude
       marker.lng person.longitude
       marker.infowindow person.family_name
-      marker.json({title: person.first_name})
+      marker.json({title: person.first_name + person.family_name})
     end
   end
 
