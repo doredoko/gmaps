@@ -1,5 +1,5 @@
-  <script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js"></script>
-  <script type="text/javascript" src="//jpostal-1006.appspot.com/jquery.jpostal.js"></script>
+<script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+
 <%= form_for(@person) do |f| %>
   <% if @person.errors.any? %>
     <div id="error_explanation">
@@ -12,7 +12,8 @@
       </ul>
     </div>
   <% end %>
-
+<form class="h-adr">
+  <span class="p-country-name" style="display:none;">Japan</span>
   <div class="field">
     <%= f.label :first_name %><br>
     <%= f.text_field :first_name %>
@@ -23,19 +24,19 @@
   </div>
   <div class="field">
     <%= f.label :postalcode %><br>
-    <%= f.text_field :postalcode %>
+    <%= f.text_field :postalcode, class="p-postal-code" %>
   </div>
   <div class="field">
     <%= f.label :city %><br>
-    <%= f.text_field :city %>
+    <%= f.text_field :city ,class="p-region"%>
   </div>
   <div class="field">
     <%= f.label :town %><br>
-    <%= f.text_field :town %>
+    <%= f.text_field :town,class="p-locality" %>
   </div>
   <div class="field">
     <%= f.label :banchi %><br>
-    <%= f.text_field :banchi %>
+    <%= f.text_field :banchi,class="p-street-address"  %>
   </div>
   <div class="field">
     <%= f.label :tel_sigai %><br>
@@ -92,4 +93,5 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+</form>  
 <% end %>
