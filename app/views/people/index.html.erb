@@ -76,4 +76,10 @@
       handler.bounds.extendWith(markers);
       handler.fitMapToBounds();
     });
+    function createInfoWindow(text){
+      var infowindow = new google.maps.InfoWindow({
+      content: text
+    });
+    return infowindow;
+    }
 </script>
