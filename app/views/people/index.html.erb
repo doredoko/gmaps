@@ -1,0 +1,63 @@
+<h1>Listing people</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Family name</th>
+      <th>Postalcode</th>
+      <th>City</th>
+      <th>Town</th>
+      <th>Banchi</th>
+      <th>Tel sigai</th>
+      <th>Telsinai</th>
+      <th>Keitai</th>
+      <th>Bikou</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Gmaps</th>
+      <th>Douki</th>
+      <th>Genki</th>
+      <th>Kouenkai</th>
+      <th>Kihukin</th>
+      <th>Syoukai</th>
+      <th>Level</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @people.each do |person| %>
+      <tr>
+        <td><%= person.first_name %></td>
+        <td><%= person.family_name %></td>
+        <td><%= person.postalcode %></td>
+        <td><%= person.city %></td>
+        <td><%= person.town %></td>
+        <td><%= person.banchi %></td>
+        <td><%= person.tel_sigai %></td>
+        <td><%= person.telsinai %></td>
+        <td><%= person.keitai %></td>
+        <td><%= person.bikou %></td>
+        <td><%= person.latitude %></td>
+        <td><%= person.longitude %></td>
+        <td><%= person.gmaps %></td>
+        <td><%= person.douki %></td>
+        <td><%= person.genki %></td>
+        <td><%= person.kouenkai %></td>
+        <td><%= person.kihukin %></td>
+        <td><%= person.syoukai_id %></td>
+        <td><%= person.level %></td>
+        <td><%= link_to 'Show', person %></td>
+        <td><%= link_to 'Edit', edit_person_path(person) %></td>
+        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Person', new_person_path %>
